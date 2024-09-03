@@ -1,0 +1,38 @@
+1. git으로 관리할 경로까지 이동 - cd: 이 명령어는 사용자가 현재 작업 중인 디렉토리를 변경하는 데 사용
+                                디렉토리 : '폴더'와 동일한 개념
+
+2. 초기화
+git init (하면 git 폴더 생성됨 - 기본적으로 숨겨져있음)
+ls -a 모든 파일과 디렉토리를 나열하는 명령어
+ls -al 디렉토리의 모든 파일과 디렉토리(숨김 파일 포함)를 자세한 정보와 함께 나열하는 명령어
+
+.git 폴더 삭제 (rm -rf .git)
+
+3. 브랜치 이름 기본값 변경하기(master 일때)
+git config --global init.defaultBranch main  : (main) 으로 뜨게 해줌
+
+4. git 상태확인
+git status : 현재 작업 중인 저장소의 상태를 확인
+
+5. git으로 관리하는 파일로 추가
+git add .
+
+6. commit (해당 시점을 저장)
+git commit -m "커밋 메세지"
+
+7. commit 이전에 계정정보 등록 (--global 옵션은 해당 컴퓨터 전체에 적용)
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+
+git config list   (q 를 치면 빠져 나올 수 있다.)
+
+git config --global --unset user.name "Your Name"
+git config --global --unset user.email you@example.com
+
+8. commit 정보확인
+git log
+
+9. 과제 
+project/test1을 생성
+git으로 관리
+파일생성은 알아서..최소 커밋의 수는 5번 이상이 되도록 하세요
